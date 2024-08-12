@@ -1,11 +1,13 @@
-const searchForm = document.getElementById('search-form');
+document.addEventListener("DOMContentLoaded", function() {
+    const editor = document.getElementById("html-editor");
+    const preview = document.getElementById("preview");
 
-searchForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const searchQuery = searchForm.elements['q'].value;
+    editor.addEventListener("input", function() {
+        const content = editor.value;
+        preview.srcdoc = content;
+    });
 
-    // Replace with your proxy server logic
-    const proxyUrl = 'http://your-proxy-server/proxy?url=' + encodeURIComponent(searchQuery);
-
-    window.location.href = proxyUrl;
+    // Set an initial value if you want to test with some default HTML content
+    editor.value = "<!DOCTYPE html>\n<html>\n<head>\n    <title>Document</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n</body>\n</html>";
+    preview.srcdoc = editor.value;
 });
