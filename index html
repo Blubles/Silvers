@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Silver Logo">
+        </div>
+        <form id="search-form">
+            <input type="text" name="q" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
