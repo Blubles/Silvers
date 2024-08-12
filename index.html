@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Silver</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time HTML Editor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <img src="logo.png" alt="Silver Logo">
-        </div>
-        <form id="search-form">
-            <input type="text" name="q" placeholder="Search">
-            <button type="submit">Search</button>
-        </form>
+        <textarea id="html-editor" placeholder="Type your HTML code here..."></textarea>
+        <iframe id="preview"></iframe>
     </div>
     <script src="script.js"></script>
 </body>
